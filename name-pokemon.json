@@ -1,0 +1,35 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": true,
+  "name": "name-pokemon",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "Pikachu",
+      "synonyms": [
+        "pikachu, Pikachu"
+      ]
+    },
+    {
+      "value": "Bulbasaur",
+      "synonyms": [
+        "bulbasaur, Bulbasaur"
+      ]
+    },
+    {
+      "value": "Ivysaur",
+      "synonyms": [
+        "ivysaur, Ivysaur"
+      ]
+    },
+    {
+      "value": "Venusaur",
+      "synonyms": [
+        "venusaur, Venusaur"
+      ]
+    }
+  ],
+  "id": "c48e19bd-6557-485b-a3b3-c224dd5cdd46",
+  "isOverridable": false
+}

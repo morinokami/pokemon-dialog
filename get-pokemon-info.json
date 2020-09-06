@@ -1,0 +1,133 @@
+{
+  "id": "5591fedf-fc8a-4abe-a414-367090a12798",
+  "name": "get-pokemon-info",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "name-pokemon",
+          "dataType": "@name-pokemon",
+          "isList": false,
+          "required": true,
+          "prompts": [],
+          "value": "$name-pokemon",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to know about ",
+          "userDefined": false
+        },
+        {
+          "text": "Bulbasaur",
+          "userDefined": true,
+          "alias": "name-pokemon",
+          "meta": "@name-pokemon"
+        }
+      ],
+      "count": 0,
+      "id": "11701f14-4dac-4934-a81e-aba735359033",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Do you know ",
+          "userDefined": false
+        },
+        {
+          "text": "pickachu",
+          "userDefined": true,
+          "alias": "name-pokemon",
+          "meta": "@name-pokemon"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "83afb6be-f906-42e3-a13f-0ed3d01814e6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tell me about ",
+          "userDefined": false
+        },
+        {
+          "text": "pikachu",
+          "userDefined": true,
+          "alias": "name-pokemon",
+          "meta": "@name-pokemon"
+        }
+      ],
+      "count": 0,
+      "id": "f7c0aed6-ef6b-4930-96ea-440acedc73f3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "What is ",
+          "userDefined": false
+        },
+        {
+          "text": "Pikachu",
+          "userDefined": true,
+          "alias": "name-pokemon",
+          "meta": "@name-pokemon"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "636fa650-e282-4cb8-a31b-aaae36bce9bd",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

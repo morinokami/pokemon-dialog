@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Pokémon Dialog</h1>
+    <ul>
+      <li class="instruction">Ask anything about Pokémons</li>
+      <li v-for="u in utterances" class="utterance">
+        {{ u.data }}
+      </li>
+    </ul>
+    <input v-model="input">
+    <button @click="submit">Submit</button>
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        utterances: [],
+        input: ''
+      },
+      methods: {
+        submit: async function () {
+          const input = this.input
+          this.input = ''
+          this.utterances.push({ data: input })
+          const response = await postData({ input: input })
+          this.utterances.push(response)
+        }
+      }
+    })
+
+    async function postData(data = {}) {
+      const res = await fetch('/dialog', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      return res.json()
+    }
+  </script>
+</body>
+
+</html>
